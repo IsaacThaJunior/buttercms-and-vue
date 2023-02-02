@@ -34,15 +34,15 @@ export default {
 			});
 	},
 
-	computed: {
-		filteredList() {
-			return this.content.filter((post) => {
-				return post.question_asked
-					.toLowerCase()
-					.includes(this.search.toLowerCase());
-			});
-		},
-	},
+	// computed: {
+	// 	filteredList() {
+	// 		return this.content.filter((post) => {
+	// 			return post.question_asked
+	// 				.toLowerCase()
+	// 				.includes(this.search.toLowerCase());
+	// 		});
+	// 	},
+	// },
 };
 </script>
 
