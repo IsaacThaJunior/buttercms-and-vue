@@ -38,16 +38,16 @@ export default {
 			});
 	},
 
-	// Search functionality
-	// computed: {
-	// 	filteredList() {
-	// 		return this.content.filter((post) => {
-	// 			return post.question_asked
-	// 				.toLowerCase()
-	// 				.includes(this.search.toLowerCase());
-	// 		});
-	// 	},
-	// },
+	//Search functionality
+	computed: {
+		filteredList() {
+			return this.content.filter((post) => {
+				return post.question_asked
+					.toLowerCase()
+					.includes(this.search.toLowerCase());
+			});
+		},
+	},
 };
 </script>
 
