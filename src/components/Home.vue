@@ -20,7 +20,7 @@ export default {
 	},
 
 	mounted() {
-		const butter = Butter('cd3a6987e220e96a1d76283f0d0d928cac2d1d4d');
+		const butter = Butter('YOUR_API_TOKEN');
 
 		butter.page
 			.retrieve('*', 'frequently-asked-questions')
