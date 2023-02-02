@@ -2,6 +2,7 @@
 import Butter from 'buttercms';
 
 export default {
+	//Creating application's state
 	data() {
 		return {
 			search: '',
@@ -10,6 +11,7 @@ export default {
 		};
 	},
 
+	//Creating application's method for routing
 	methods: {
 		shareData(post) {
 			this.$router.push({
@@ -19,7 +21,9 @@ export default {
 		},
 	},
 
+	//Creating application's lifecycle hook for when the app mounts
 	mounted() {
+		
 		const butter = Butter('YOUR_API_TOKEN');
 
 		butter.page
@@ -34,6 +38,7 @@ export default {
 			});
 	},
 
+	// Search functionality
 	// computed: {
 	// 	filteredList() {
 	// 		return this.content.filter((post) => {
@@ -69,6 +74,7 @@ export default {
 	</div>
 </template>
 
+<!-- styles -->
 <style lang="scss" scoped>
 html,
 body {
