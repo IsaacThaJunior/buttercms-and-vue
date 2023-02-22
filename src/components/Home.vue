@@ -24,7 +24,7 @@ export default {
 	//Creating application's lifecycle hook for when the app mounts
 	mounted() {
 		
-		const butter = Butter('YOUR_API_TOKEN');
+		const butter = Butter('cd3a6987e220e96a1d76283f0d0d928cac2d1d4d');
 
 		butter.page
 			.retrieve('*', 'frequently-asked-questions')
